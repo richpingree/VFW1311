@@ -1,0 +1,19 @@
+
+var myList =[];
+
+var window1 = Ti.UI.createWindow({
+	title: "Project 1",
+	backgroundColor: "#2E29D6"
+});
+
+var view1 = Ti.UI.createView({
+	backgroundColor: "D1D629",
+	height: 100,
+	width: 200,
+	bottom: 0,
+	left: 0,
+	radius: 25	
+});
+
+window1.add(view1);
+window1.open();
