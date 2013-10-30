@@ -1,49 +1,75 @@
 //tab group
 var tabGroup = Ti.UI.createTabGroup();
 
-//varables
-var myList = ["Vinyl Records", "8 Track", "Cassettes", "Compact Disc", "Downloaded MP3"];
 
 //window
-var window1 = Ti.UI.createWindow({
+var mainWindow = Ti.UI.createWindow({
 	title: "Project 1",
-	backgroundColor: "#fff",
-	
+	backgroundColor: "#333",
+	tabBarHidden: true // to hide the nav buttons for the tabs
 });
 
 var tab1 = Ti.UI.createTab({
-	window:window1
 	
+	window:mainWindow
 });
 //labels
-var label1 = Ti.UI.createLabel({
+var mainLabel = Ti.UI.createLabel({
 	color: "#999",
-	text: "Hello World!",
+	text: "",
 	font: {fontSize: 20, fontFamily: "Helvetica"},
 	textAlign: "center",
-	width: "auto"
 	
+});
+var previousLabel = Ti.UI.createLabel({
+	color: "#999",
+	text: "Previous",
+	font: {fontSize: 20, fontFamily: "Ariel"},
+	textAlign: "center"
+	
+});
+var nextLabel = Ti.UI.createLabel({
+	color: "#999",
+	text: "Next",
+	font: {fontSize: 20, fontFamily: "Ariel"},
+	textAlign: "center"	
 });
 
 //views
-var view1 = Ti.UI.createView({
+var mainView = Ti.UI.createView({
+	backgroundColor: "#fff",
+	borderRadius: 15,
+	height: 150,
+	width: 200,
+	top: 50,
+	alignment: "center"
+	
+});
+var leftButton = Ti.UI.createView({
 	backgroundColor: "D1D629",
-	height: 100,
+	borderRadius: 30,
+	height: 50,
 	width: '50%',
 	bottom: 0,
 	left: 0
 });
 
-var view2 = Ti.UI.createView({
+var rightButton = Ti.UI.createView({
 	backgroundColor: "D1D629",
-	height: 100,
+	borderRadius: 30,
+	height: 50,
 	width: '50%',
 	bottom: 0,
 	right: 0
 	
 });
-tabGroup.addTab(tab1);
+
+var mediaFile = require('media');
 
 //outputs
-window1.open();
+tabGroup.addTab(tab1);
+leftButton.add(previousLabel);
+rightButton.add(nextLabel);
+mainWindow.add(leftButton, rightButton);
 tabGroup.open();
+mainWindow.open();

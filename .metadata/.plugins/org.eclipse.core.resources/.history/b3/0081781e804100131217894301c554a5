@@ -1,0 +1,51 @@
+//tab group
+var tabGroup = Ti.UI.createTabGroup();
+
+
+//window
+var window1 = Ti.UI.createWindow({
+	title: "Project 1",
+	backgroundColor: "#333",
+	tabBarHidden: true
+});
+
+var tab1 = Ti.UI.createTab({
+	backgroudColor: "#333",
+	window:window1
+});
+//labels
+var label1 = Ti.UI.createLabel({
+	color: "#999",
+	text: "Hello World!",
+	font: {fontSize: 20, fontFamily: "Helvetica"},
+	textAlign: "center",
+	width: "auto"
+	
+});
+
+//views
+var view1 = Ti.UI.createView({
+	backgroundColor: "D1D629",
+	borderRadius: 20,
+	height: 50,
+	width: '50%',
+	bottom: 0,
+	left: 0
+});
+
+var view2 = Ti.UI.createView({
+	backgroundColor: "D1D629",
+	borderRadius: 20,
+	height: 50,
+	width: '50%',
+	bottom: 0,
+	right: 0
+	
+});
+tabGroup.addTab(tab1);
+
+//outputs
+
+window1.add(view1, view2);
+tabGroup.open();
+window1.open();

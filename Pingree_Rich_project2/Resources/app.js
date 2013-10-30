@@ -11,13 +11,14 @@ var tabGroup = Titanium.UI.createTabGroup();
 var win1 = Titanium.UI.createWindow({  
     title:'Project 1',
     backgroundColor:'#fff',
+    tabBarHidden: true  //to hide the nav buttons for the tabs
    
 });
 var tab1 = Titanium.UI.createTab({  
-   //icon:'KS_nav_views.png',
-   //title:'Tab 1',
+   icon:'KS_nav_views.png',
+   title:'Tab 1',
    window:win1,
-   navBarHidden: true
+ 
 });
 
 var label1 = Titanium.UI.createLabel({

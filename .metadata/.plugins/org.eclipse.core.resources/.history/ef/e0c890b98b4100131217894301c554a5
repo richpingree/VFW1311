@@ -1,0 +1,74 @@
+//tab group
+var tabGroup = Ti.UI.createTabGroup();
+
+
+//window
+var mainWindow = Ti.UI.createWindow({
+	title: "Project 1",
+	backgroundColor: "#333",
+	tabBarHidden: true // to hide the nav buttons for the tabs
+});
+
+var tab1 = Ti.UI.createTab({
+	
+	window:mainWindow
+});
+//labels
+var mainLabel = Ti.UI.createLabel({
+	color: "#999",
+	text: "",
+	font: {fontSize: 20, fontFamily: "Helvetica"},
+	textAlign: "center",
+	width: "auto"
+	
+});
+var previousLabel = Ti.UI.createLabel({
+	color: "#999",
+	text: "Previous",
+	font: {fontSize: 20, fontFamily: "Ariel"},
+	textAlign: "center"
+	
+});
+var nextLabel = Ti.UI.createLabel({
+	color: "#999",
+	text: "Next",
+	font: {fontSize: 20, fontFamily: "Ariel"},
+	textAlign: "center"	
+});
+
+//views
+var mainView = Ti.UI.createView({
+	backgroundColor: "#fff",
+	borderRadius: 15,
+	height: 150,
+	width: 200,
+	top: 50,
+	alignment: "center"
+	
+});
+var leftButton = Ti.UI.createView({
+	backgroundColor: "D1D629",
+	borderRadius: 30,
+	height: 50,
+	width: '50%',
+	bottom: 0,
+	left: 0
+});
+
+var rightButton = Ti.UI.createView({
+	backgroundColor: "D1D629",
+	borderRadius: 30,
+	height: 50,
+	width: '50%',
+	bottom: 0,
+	right: 0
+	
+});
+
+//outputs
+tabGroup.addTab(tab1);
+leftButton.add(previousLabel);
+rightButton.add(nextLabel);
+mainWindow.add(mainView, leftButton, rightButton);
+tabGroup.open();
+mainWindow.open();
