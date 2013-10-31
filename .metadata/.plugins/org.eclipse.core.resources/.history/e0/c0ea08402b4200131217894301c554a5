@@ -14,16 +14,22 @@ var tab1 = Ti.UI.createTab({
 	window:mainWindow
 });
 //labels
-
+var mainLabel = Ti.UI.createLabel({
+	color: "#999",
+	text: "",
+	font: {fontSize: 20, fontFamily: "Helvetica"},
+	textAlign: "center",
+	
+});
 var previousLabel = Ti.UI.createLabel({
-	color: "#E3E6E3",
+	color: "#999",
 	text: "Previous",
 	font: {fontSize: 20, fontFamily: "Ariel"},
 	textAlign: "center"
 	
 });
 var nextLabel = Ti.UI.createLabel({
-	color: "#E3E6E3",
+	color: "#999",
 	text: "Next",
 	font: {fontSize: 20, fontFamily: "Ariel"},
 	textAlign: "center"	
@@ -40,20 +46,20 @@ var mainView = Ti.UI.createView({
 	
 });
 var leftButton = Ti.UI.createView({
-	backgroundColor: "#089C19",
+	backgroundColor: "D1D629",
 	borderRadius: 30,
 	height: 50,
 	width: '50%',
-	top: (mainView.top + mainView.height)+15,
+	top: (mainView.top + mainView.height)+15
 	left: 0
 });
 
 var rightButton = Ti.UI.createView({
-	backgroundColor: "#089C19",
+	backgroundColor: "D1D629",
 	borderRadius: 30,
 	height: 50,
 	width: '50%',
-	top: (mainView.top + mainView.height)+15,
+	bottom: 0,
 	right: 0
 	
 });

@@ -1,6 +1,6 @@
 //varables
 var myList = ["Vinyl Records", "8 Track", "Cassettes", "Compact Disc", "Downloaded MP3"];
-var items = 0;
+
 
 var mainView = Ti.UI.createView({
 	backgroundColor: "#fff",
@@ -12,8 +12,8 @@ var mainView = Ti.UI.createView({
 });
 			
 var mainLabel = Ti.UI.createLabel({
-	color: "#1127A6",
-	text: myList[0],
+	color: "#999",
+	text: myList[2],
 	font: {fontSize: 20, fontFamily: "Helvetica"},
 	textAlign: "center",
 			
@@ -21,20 +21,11 @@ var mainLabel = Ti.UI.createLabel({
 	
 
 var nextItem = function(){
+	var items = 0;
 		if (items < myList.length){
 			mainLabel.text = myList[items];
-			items++;
 		} else {
-			items = 0;
-		};
-};
-
-var previousItem = function(){
-		if (items < myList.length){
-			mainLabel.text = myList[items];
-			items--;
-		} else if (items = 0) {
-			mainLabel.text = myList[myList.length];
+			items = items++;
 		};
 };
 
@@ -44,7 +35,7 @@ var previousItem = function(){
 //events
 
 rightButton.addEventListener("click", nextItem);
-leftButton.addEventListener("click", previousItem);
+//leftButton.addEventListener("click", previousItem);
 
 mainView.add(mainLabel);
 mainWindow.add(mainView);

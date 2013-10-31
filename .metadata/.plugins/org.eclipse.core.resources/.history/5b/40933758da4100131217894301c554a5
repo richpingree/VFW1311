@@ -12,7 +12,7 @@ var mainView = Ti.UI.createView({
 });
 			
 var mainLabel = Ti.UI.createLabel({
-	color: "#1127A6",
+	color: "#999",
 	text: myList[0],
 	font: {fontSize: 20, fontFamily: "Helvetica"},
 	textAlign: "center",
@@ -33,8 +33,8 @@ var previousItem = function(){
 		if (items < myList.length){
 			mainLabel.text = myList[items];
 			items--;
-		} else if (items = 0) {
-			mainLabel.text = myList[myList.length];
+		} else {
+			items = myList.length;
 		};
 };
 
