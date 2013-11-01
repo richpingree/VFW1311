@@ -18,4 +18,4 @@ function setupSettings() {
 	return view;
 };
 
-winSettings.open();
+winsettings.open();

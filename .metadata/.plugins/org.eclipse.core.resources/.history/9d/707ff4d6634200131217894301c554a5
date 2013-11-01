@@ -7,7 +7,8 @@ var mainView = Ti.UI.createView({
 	borderRadius: 15,
 	height: 150,
 	width: 200,
-	top: 50
+	top: 50,
+	alignment: "center"
 });
 			
 var mainLabel = Ti.UI.createLabel({
@@ -29,7 +30,7 @@ var nextItem = function(){
 };
 
 var previousItem = function(){
-		if (items < myList.length){
+		if (nextItem < myList.length){
 			mainLabel.text = myList[items];
 			items--;
 		} else {

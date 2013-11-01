@@ -7,14 +7,15 @@ var mainView = Ti.UI.createView({
 	borderRadius: 15,
 	height: 150,
 	width: 200,
-	top: 50
+	top: 50,
+	alignment: "center"
 });
 			
 var mainLabel = Ti.UI.createLabel({
 	color: "#1127A6",
-	text: myList[items],
+	text: myList[],
 	font: {fontSize: 20, fontFamily: "Helvetica"},
-	textAlign: "center"
+	textAlign: "center",
 			
 });	
 	
@@ -30,20 +31,20 @@ var nextItem = function(){
 
 var previousItem = function(){
 		if (items < myList.length){
-			mainLabel.text = myList[items];
-			items--;
-		} else {
-			items = myList.length;
+			mainLabel.text = myList[items--];
+			//items--;
+		} else if (items = 0) {
+			mainLabel.text = myList[myList.length];
 		};
 };
 
 
-mainView.add(mainLabel);
-mainWindow.add(mainView);
+
 
 //events
 
 rightButton.addEventListener("click", nextItem);
 leftButton.addEventListener("click", previousItem);
 
-
+mainView.add(mainLabel);
+mainWindow.add(mainView);
