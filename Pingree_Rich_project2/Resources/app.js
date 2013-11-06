@@ -1,21 +1,12 @@
-var tabGroup = Ti.UI.createTabGroup();
-
-var winSettings = Ti.UI.createWindow({
+win = Ti.UI.createWindow({
+	title: "Comicbook Heroes and Villians",
+	modal: true,
+	backgroundColor: "#595BC2"
 });
 
-var tabSettings = Ti.UI.createTab({
-	icon: 'KS_nav_views.png',
-	title: 'Settings',
-	window:winSettings
+var navWin = Ti.UI.iOS.createNavigationWindow({
+	window: win
 });
 
-winSettings.add(setupSettings());
-tabGroup.addTab(tabSettings);
 
-function setupSettings() {
-	
-	var view = Ti.UI.createView({});
-	return view;
-};
-
-winSettings.open();
+navWin.open();

@@ -1,0 +1,22 @@
+var mainWin = Ti.UI.createWindow();
+
+var navWin = Ti.UI.createWindow({
+	title: "My list",
+	modal: true,
+	backgroundColor: "#fff"
+	
+});
+
+var navGroup = Ti.UI.iPhone.createNavigationGroup({
+	window:navWin
+	
+});
+
+var table = Ti.UI.createTabView({
+	style: Ti.UI.iPhone.TableViewStyle.GROUPED	
+	
+});
+
+
+win.add(table);
+mainWin.open();

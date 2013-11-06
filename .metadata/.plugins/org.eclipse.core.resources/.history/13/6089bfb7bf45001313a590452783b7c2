@@ -1,0 +1,11 @@
+var win = Ti.UI.createWindow();
+
+var myData = [{title: "Apples"}, {title: "Bananas"}, {title: "Carrots"}, {title: "Potatoes"}]
+
+var table = Ti.UI.createTableView({
+	style: Ti.UI.iPhone.TableViewStyle.GROUPED,
+	data: myData
+});
+
+win.add(table);
+win.open();

@@ -1,0 +1,74 @@
+var win = Ti.UI.createWindow();
+
+var navWin = Ti.UI.createWindow({
+	title: "My Shopping List",
+	modal: true,
+	backgroundColor: "#fff"
+});
+
+var navGroup = Ti.UI.IOS.createNavigationGroup({
+	window: navWin
+	
+});
+
+var produce = [{title: "Apples", description: "There are a lot of different kinds of apples."}, {title: "Bananas", description: "Bananas are good."}];
+var vege = [{title: "Carrots"}, {title: "Potatoes"}];
+
+
+var table = Ti.UI.createTableView({
+	style: Ti.UI.iPhone.TableViewStyle.GROUPED,
+});
+
+var getProduceDetail = function(){
+	var detailWindow = Ti.UI.createWindow({
+		backgroundColor: "#fff",
+		title: this.title,
+		modal: true
+	});
+	var detailText = Ti.UI.createLabel({
+		text: this.desc,
+		font: {fontSize: 18, fontFamily: "Arial"}
+		
+	});
+	detailWindow.add(detailText);
+	detailWindow.open();
+};
+
+var produceSection = Ti.UI.createTableViewSection({
+	headerTitle: "Produce",
+	footerTitle: "List of produce we need to buy."
+});
+
+for(var i=0; i<produce.length; i++){
+	var theRow = Ti.UI.createTableViewRow({
+		title: produce[i].title,
+		desc: produce[i].description,
+		hasChild: true
+	});
+	produceSection.add(theRow);
+	theRow.addEventListener("click", getProduceDetail);
+	
+};
+
+
+//var vegeSection = Ti.UI.createTableViewSection({
+//	headerTitle: "Vegetables",
+//	footerTitle: "List of vegetables we need to buy."
+//});
+
+//for(var i=0; i<vege.length; i++){
+//	var theRow = Ti.UI.createTableViewRow({
+//		title: vege[i].title,
+//		hasChild: true
+//	});
+//	vegeSection.add(theRow);
+//	theRow.addEventListener("click", getVegeDetail);
+//};
+
+var mySections = [produceSection];
+
+table.setData(mySections);
+
+navWin.add(table);
+win.add(navGroup);
+win.open();

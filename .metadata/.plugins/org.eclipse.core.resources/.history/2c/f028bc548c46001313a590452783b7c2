@@ -1,0 +1,60 @@
+var characters = {
+	"superheroes" : {
+		"headTitle": "Superheros",
+		"footTitle": "Heroes fight for justice!",
+		"identity": [
+			{"name": "Superman", "description": "Superman is the Man of Steel!"},
+			{"name": "Batman", "description": "Batman is the Dark Knight!"},
+			{"name": "Green Arrow", "description": "Billionaire Oliver Queen"}
+		]
+	},
+	"supervillians":{
+		"headTitle": "Supervillians",
+		"footTitle": "Villians are crime lords.",
+		"identity": [
+			{"name": "Lex Luther", "description": "He is Superman's enemy."},
+			{"name": "The Joker", "description": "Everything is a joke to this guy."},
+			{"name": "Deathstroke", "description": "This masked mercenary put fear in all he encounters."}
+		]
+	}
+};
+
+
+
+
+var getDetail = function(){
+	var detailWindow = Ti.UI.createWindow({
+		backgroundColor: "#595BC2",
+		title: this.title,
+		modal: true
+	});
+	var detailText = Ti.UI.createLabel({
+		text: this.desc,
+		color: "#fff",
+		font: {fontSize: 18, fontFamily: "Arial"}
+		
+	});
+	detailWindow.add(detailText);
+	navGroup.open(detailWindow, {animation: true});
+	
+};
+
+var mySections = [];
+for(n in characters){
+	var tableSection = Ti.UI.createTableViewSection({
+		headerTitle: characters[n].headTitle,
+		footerTitle: characters[n].footTitle
+	});
+	for(var i = 0; i<characters[n].identity.length; i++){
+		var theRow = Ti.UI.createTableViewRow({
+			title: characters[n].identity[i].name,
+			desc: characters[n].identity[i].description,
+			hasChild: true
+		});
+		tableSection.add(theRow);
+		theRow.addEventListener("click", getDetail);
+	}
+	mySections.push(tableSection);	
+};
+
+table.setData(mySections);

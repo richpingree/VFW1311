@@ -1,0 +1,23 @@
+var win = Ti.UI.createWindow();
+
+var navWin = Ti.UI.createWindow({
+	title: "Comicbook Heroes and Villian",
+	modal: true,
+	backgroundColor: "#fff"
+});
+
+var navGroup = Ti.UI.iPhone.createNavigationGroup({
+	window: navWin
+	
+});
+	
+var table = Ti.UI.createTableView({
+	style: Ti.UI.iPhone.TableViewStyle.GROUPED
+});
+
+
+var mediaFile = require('char');
+
+navWin.add(table);
+win.add(navGroup);
+win.open();

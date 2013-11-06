@@ -1,0 +1,39 @@
+var mainWin = Ti.UI.createWindow();
+
+var navWin = Ti.UI.createWindow({
+	title: "My list",
+	modal: true,
+	backgroundColor: "#fff"
+	
+});
+
+var navGroup = Ti.UI.iPhone.createNavigationGroup({
+	window: navWin
+	
+});
+
+var produce = [{title: "Apples", decription: "There are a lot of different apples."}, {title: "Bananas", decription: "Bananas are good"}];
+
+var table = Ti.UI.createTabView({
+	style: Ti.UI.iPhone.TableViewStyle.GROUPED	
+	
+});
+
+var getDetail = function(){
+	var detailWin = Ti.UI.createWindow({
+		backgroundColor: "#fff",
+		title: this.title,
+		modal: true
+	});
+	var detailText = Ti.UI.createLabel({
+		text: this.desc,
+		font: {fontSize: 20, fontFamily: "Arial"}
+		
+	});
+	detailWin.add(detailText);
+	navGroup.open(detailWin, {animation: true});
+};
+
+
+win.add(table);
+mainWin.open();
