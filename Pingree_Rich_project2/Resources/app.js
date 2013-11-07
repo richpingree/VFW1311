@@ -1,5 +1,5 @@
 win = Ti.UI.createWindow({
-	title: "Comicbook Heroes and Villians",
+	title: "Project Week 2",
 	modal: true,
 	backgroundColor: "#595BC2"
 });
