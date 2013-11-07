@@ -1,0 +1,54 @@
+
+
+
+//window
+var mainWindow = Ti.UI.createWindow({
+	title: "Timer",
+	backgroundColor: "#333",
+	tabBarHidden: true // to hide the nav buttons for the tabs
+});
+
+
+
+var mainView = Ti.UI.createView({
+	text: counter,
+	font: {fontSize: 36, fontFamily: "Times New Roman"}
+	alignment: "center"
+	
+});
+
+var nextLabel = Ti.UI.createLabel({
+	color: "#E3E6E3",
+	text: "Start",
+	font: {fontSize: 20, fontFamily: "Ariel"},
+	textAlign: "center"	
+});
+
+var rightButton = Ti.UI.createView({
+	backgroundColor: "#089C19",
+	borderRadius: 30,
+	height: 50,
+	bottom: 20,
+	right: 20,
+	left: 20
+	
+});
+
+
+var theCounter, counter = 10;
+
+var countDown = function(){
+	counter--;
+	
+};
+
+var startCount = function(){
+	theCounter = setInterval(countDown, 1000);
+};
+
+
+//outputs
+rightButton.addEventListener("click", startCount);
+rightButton.add(nextLabel);
+mainWindow.add(rightButton);
+mainWindow.open();

@@ -1,0 +1,15 @@
+var win = Ti.UI.createWindow({
+	backgroundColor: "#fff"
+	
+});
+
+var buttonView = createView({
+	color: "#089C19",
+	bottom: 20,
+	left: 20,
+	right: 20,
+	height: 50
+});
+
+win.add(buttonView);
+win.open();
