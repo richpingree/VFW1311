@@ -182,3 +182,9 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/richardp
 
 !ENTRY org.eclipse.osgi 2 1 2013-11-05 19:38:19.021
 !MESSAGE NLS missing message: BasicProjectCreationPage_crossPlatformWarningIOS in: com.appcelerator.titanium.ui.wizard.messages
+
+!ENTRY org.eclipse.ui 4 4 2013-11-13 07:20:55.143
+!MESSAGE Unable to create menu item "com.appcelerator.titanium.mobile.command.install.blackberry", command "com.appcelerator.titanium.mobile.command.install.blackberry" not defined
+
+!ENTRY org.eclipse.ui 4 4 2013-11-13 13:03:49.847
+!MESSAGE Unable to create menu item "com.appcelerator.titanium.mobile.command.install.blackberry", command "com.appcelerator.titanium.mobile.command.install.blackberry" not defined

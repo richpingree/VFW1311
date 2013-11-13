@@ -20,20 +20,20 @@ var characters = {
 	}
 };
 
-var getInfo = function(){
-	var statementWin = Ti.UI.createWindow({
-		backgroundColor: "#595BC2",
-		title: this.title,
-		modal: true
-	});
-	var statementText = Ti.UI.createLabel({
-		text: this.state,
-		color: "#fff",
-		font: {fontSize: 20, fontFamily: "Times New Roman"}
-	});
-	statementWin.add(statementText);
-	navWin.openWindow(statementWin, {animate: true});
-};
+//var getInfo = function(){
+//	var statementWin = Ti.UI.createWindow({
+//		backgroundColor: "#595BC2",
+//		title: this.title,
+//		modal: true
+//	});
+//	var statementText = Ti.UI.createLabel({
+//		text: this.state,
+//		color: "#fff",
+//		font: {fontSize: 20, fontFamily: "Times New Roman"}
+//	});
+//	statementWin.add(statementText);
+//	navWin.openWindow(statementWin, {animate: true});
+//};
 
 var sections = [];
 for(n in characters){
@@ -48,9 +48,26 @@ for(n in characters){
 			hasChild: true
 		});
 		tableSecs.add(theRow);
-		theRow.addEventListener("click", getInfo);
+		//theRow.addEventListener("click", getInfo);
 	};
 	sections.push(tableSecs);
 };
 
+table.addEventListener("click", function(event){
+	var statementWin = Ti.UI.createWindow({
+		backgroundColor: "#595BC2",
+		title: event.source.title,
+		modal: true
+	});
+	var statementText = Ti.UI.createLabel({
+		text: event.source.state,
+		color: "#fff",
+		font: {fontSize: 20, fontFamily: "Times New Roman"}
+	});
+	statementWin.add(statementText);
+	navWin.openWindow(statementWin, {animate: true});
+	
+});
 table.setData(sections);
+
+

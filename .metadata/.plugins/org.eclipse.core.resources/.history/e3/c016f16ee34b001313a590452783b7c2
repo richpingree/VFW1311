@@ -1,0 +1,30 @@
+var totalViews = 20;
+var numberOfColums = 4;
+var spacing = 2;
+var amountOfSpaces = (numberOfColums + 1)* spacing;
+var platformWidth = Ti.Platform.displayCaps.platformWidth;
+
+var newWidth = (platformWidth - amountOfSpaces)/totalViews;
+
+var makeViews = function(){
+	for(var i=0; i<totalViews; i++){
+		var newView = Ti.UI.createView({
+			top: 4,
+			left: newWidth,
+			backgroundColor: "#fff",
+			width: 150,
+			height: 100
+			
+		});
+		var newLabel = Ti.UI.createLabel({
+			text: i,
+			textAligh: "center"
+			
+		});
+		newView.add(newLabel);
+		mainWin.add(newView);
+	};
+	
+};
+
+makeViews();

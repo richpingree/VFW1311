@@ -1,0 +1,31 @@
+var totalViews = 20;
+
+var viewsContainer = Ti.UI.createScrollView({
+	layout: "horizontal"
+	
+});
+
+var makeViews = function(){
+	for(var i=0; i<totalViews; i++){
+		var newView = Ti.UI.createView({
+			top: 4,
+			left: 4,
+			backgroundColor: "#fff",
+			width: 75,
+			height: 100
+			
+		});
+		var newLabel = Ti.UI.createLabel({
+			text: i,
+			textAligh: "center"
+			
+		});
+		newView.add(newLabel);
+		viewsContainer.add(newView);
+	};
+	
+};
+
+makeViews();
+
+mainWin.add(viewsContainer);

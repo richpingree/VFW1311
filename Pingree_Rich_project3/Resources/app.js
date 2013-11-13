@@ -1,63 +1,39 @@
 
 
 
-//window
-var mainWindow = Ti.UI.createWindow({
-	title: "Timer",
-	backgroundColor: "#333",
-	tabBarHidden: true // to hide the nav buttons for the tabs
+var mainWin = Ti.UI.createWindow({
+	title: "Project 3",
+	backgroundColor: "#0202Cf",
+	modal: true
 });
 
-var theCounter, counter = 10;
-
-var mainLabel = Ti.UI.createLabel({
-	text: counter,
-	color: "#fff",
-	font: {fontSize: 36, fontFamily: "Time New Roman"}
+var tab1 = Ti.UI.createTab({
 	
+	window:mainWin
 });
 
-var nextLabel = Ti.UI.createLabel({
-	color: "#E3E6E3",
-	text: "Start",
-	font: {fontSize: 20, fontFamily: "Ariel"},
-	textAlign: "center"	
-});
-
-var rightButton = Ti.UI.createView({
+var viewPhotoButton = Ti.UI.createView({
 	backgroundColor: "#089C19",
-	borderRadius: 30,
 	height: 50,
-	bottom: 20,
-	right: 20,
-	left: 20
+	width: 150,
+	borderRadius: 10,
+	alignment: "center"
+});
+
+var photoButtonLabel = Ti.UI.createLabel({
+	text: "View Photos",
+	color: "#fff",
+	textAlign: "center",
+	font: {fontSize: 20, fontFamily: "Times New Roman"}
 	
 });
-var endCount = function(){
-	clearInterval(TheCounter);
-	alert("Time has expired!");
-	
-};
 
 
-var countDown = function(){
-	if(counter |=0){
-		counter--;
-		mainLabel.text = counter;
-	}else{
-		mainLabel.fireEvent("end");
-	}
-};
-
-var startCount = function(){
-	mainLabel.addEventListener("end", endCount);
-	theCounter = setInterval(countDown, 1000);
-};
 
 
-//outputs
-mainWindow.add(mainLabel);
-rightButton.addEventListener("click", startCount);
-rightButton.add(nextLabel);
-mainWindow.add(rightButton);
-mainWindow.open();
+viewPhotoButton.add(photoButtonLabel);
+mainWin.add(viewPhotoButton);
+
+var mediafile = require("photos");
+
+mainWin.open();

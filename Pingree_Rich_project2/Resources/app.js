@@ -16,5 +16,6 @@ var table = Ti.UI.createTableView({
 
 var mediaFile = require('char');
 
+
 win.add(table);
 navWin.open();

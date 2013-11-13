@@ -1,0 +1,37 @@
+var mainWin = Ti.UI.createWindow({
+	title: "Project 3",
+	color: "#fff",
+	modal: true
+});
+
+// var viewPhotoButton = Ti.UI.createView({
+	// backgroundColor: "089C19",
+	// height: 50,
+	// width: 150,
+	// top: 10,
+	// alignment: "center"
+// 	
+// });
+// 
+// var photoButtonLabel = Ti.UI.createLabel({
+	// text: "View Photos",
+	// color: "#fff",
+	// textAlign: "center",
+	// font: {fontSize: 20, fontFamily: "Times New Roman"}
+// 	
+// });
+// 
+// var openGallery = function (){
+	// galWin = Ti.UI.createWindow({
+		// backgroundColor: "#0202CF"
+// 		
+	// });
+// 	
+// };
+// 
+// mainWin.addEventListener("click", openGallery);
+// viewPhotoButton.add(photoButtonLabel);
+// mainWin.add(viewPhotoButton);
+mainWin.open();
+
+

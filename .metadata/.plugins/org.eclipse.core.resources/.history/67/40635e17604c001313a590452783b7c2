@@ -1,0 +1,44 @@
+var mainWin = Ti.UI.createWindow({
+	title: "Project 3",
+	backgroundColor: "#0202CF",
+	modal: true
+	
+});
+
+var galWin = Ti.UI.createWindow({
+	title: "Photo Gallery",
+	backgroundColor: "#0202CF"
+		
+});
+
+var viewPhotoButton = Ti.UI.createView({
+	backgroundColor: "089C19",
+	height: 50,
+	width: 150,
+	borderRadius: 10,
+	alignment: "center"
+	
+});
+
+var photoButtonLabel = Ti.UI.createLabel({
+	text: "View Photos",
+	color: "#fff",
+	textAlign: "center",
+	font: {fontSize: 20, fontFamily: "Times New Roman"}
+	
+});
+
+// var openGallery = function (){
+	// galWin.open();
+// };
+
+viewPhotoButton.addEventListener("click", function(){
+	galWin.open();
+});
+viewPhotoButton.add(photoButtonLabel);
+mainWin.add(viewPhotoButton);
+var modes = require("photos");
+
+mainWin.open();
+
+
