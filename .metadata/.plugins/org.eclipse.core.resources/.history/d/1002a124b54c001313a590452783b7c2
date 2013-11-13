@@ -1,0 +1,40 @@
+var photoList = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, "myImages");
+var imageList = photoList.getDirectoryListing();
+
+var galWin = Ti.UI.createWindow({
+	title: "Gallery",
+	backgroundColor: "#030303",
+	modal: true,
+});
+
+	
+var thumbsContainer = Ti.UI.createScrollView({
+	layout: "horizontal"
+	
+});
+
+var makeThumb = function(){
+	for(var i=0; i<imageList.length; i++){
+		var galView = Ti.UI.createView({
+			top: 5,
+			left: 5,
+			width: 75,
+			height: 75,
+			borderRadius: 5,
+			
+		});
+		var photo = Ti.UI.createImageView({
+			image: "imageList[i]"
+			
+		});
+		galView.add(photo);
+		thumbsContainer.add(galView);
+	}
+	
+};
+
+makeThumb();
+
+viewPhotoButton.addEventListener("click", function(){
+		galWin.open(thumbsContainer);
+});

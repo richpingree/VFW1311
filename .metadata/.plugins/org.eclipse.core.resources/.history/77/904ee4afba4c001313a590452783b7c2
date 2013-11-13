@@ -9,7 +9,6 @@ var galWin = Ti.UI.createWindow({
 	title: "Gallery",
 	backgroundColor: "#030303",
 	modal: true,
-	tabBarHidden: true
 });
 
 var closeButtonView = Ti.UI.createView({
@@ -27,21 +26,20 @@ var closeButtonLabel = Ti.UI.createLabel({
 	
 });
 
+closeButtonView.add(closeButtonLabel);
+galWin.add(closeButtonView);
+
 viewPhotoButton.addEventListener("click", function(){
-	galWin.open(thumbsContainer);
-	closeButtonView.add(closeButtonLabel);
-	galWin.add(closeButtonView);
+		galWin.open(thumbsContainer);
+
 });
 
-closeButtonView.addEventListener("click", function(){
-	galWin.close();
 	
-});	
-
 var thumbsContainer = Ti.UI.createScrollView({
 	contentWidth: platformWidth,
 	contentHeight: platformHeight,
 	layout: "horizontal",
+	
 	
 });
 
@@ -67,18 +65,5 @@ var makeThumb = function(){
 };
 
 makeThumb();
-
-galWin.addEventListener("click", function(event){
-	var imageWin = Ti.UI.createWindow({
-		title: imageList[i],
-		backgroundColor: "#fff"
-	});
-	var photoView = Ti.UI.createImageView({
-		image: "imageList[i]",
-		borderRadius: 5
-	});
-	imageWin.add(photoView);
-	imageWin.open();
-});
 
 

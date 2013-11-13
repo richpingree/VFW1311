@@ -1,0 +1,32 @@
+var mainWin = Ti.UI.createWindow({
+	title: "Project 3",
+	backgroundColor: "#0202CF",
+	modal: true
+});
+var navWin = Ti.UI.iOS.createNavigationWindow({
+	window: mainWin
+});
+
+var enterButtonView = Ti.UI.createView({
+	backgroundColor: "#089C19",
+	width: 150,
+	height: 50,
+	borderRadius: 10,
+	alignment: "center"
+});
+
+var enterButtonLabel = Ti.UI.createLabel({
+	text: "View Photos",
+	color: "#E3E6E3s",
+	textAlign: "center",
+	font: {fontSize: 20, fontFamily: "Times New Roman"}	
+});
+
+var mediafile = require("photos");
+
+
+enterButtonView.add(enterButtonLabel);
+mainWin.add(enterButtonView);
+navWin.open();
+
+

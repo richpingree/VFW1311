@@ -1,0 +1,68 @@
+var platformWidth = Ti.Platform.displayCaps.platformWidth;
+
+var galWin = Ti.UI.createWindow({
+	title: "Gallery",
+	backgroundColor: "#fff",
+	modal: true
+});
+
+var galWinView = Ti.UI.createView();
+
+var navWin2 = Ti.UI.iOS.createNavigationWindow({
+	window: galWin
+});
+
+
+
+var closeButtonView = Ti.UI.createView({
+	backgroundColor: "#B00707",
+	height: 50,
+	bottom: 0
+});
+
+var closeButtonLabel = Ti.UI.createLabel({
+	text: "Close",
+	color: "#E3E6E3",
+	textAlign: "center",
+	font: {fontSize: 20, fontFamily: "Times New Roman"}
+	
+});
+
+
+
+var totalViews = 20;
+
+var galWinView = Ti.UI.createScrollView({
+	layout: "vertical"
+});
+var makeViews = function(){
+	for(var i=0; i<totalViews; i++){
+		var newView = Ti.UI.createView({
+			top: 4,
+			left: 4,
+			backgroundColor: "#9C9316",
+			width: 75,
+			height: 100
+			
+		});
+		var newLabel = Ti.UI.createLabel({
+			text: i,
+			textAlign: "center"
+			
+		});
+		newView.add(newLabel);
+		galWinView.add(newView);
+		galWin.add(galWinView);
+		navWin2.open();
+	}
+	
+};
+enterButtonView.addEventListener("click", makeViews);
+
+closeButtonView.addEventListener("click", function(){
+	navWin2.close();
+});
+
+
+closeButtonView.add(closeButtonLabel);
+galWin.add(closeButtonView);

@@ -12,6 +12,8 @@ var galWin = Ti.UI.createWindow({
 	tabBarHidden: true
 });
 
+
+
 var closeButtonView = Ti.UI.createView({
 	backgroundColor: "#B00707",
 	height: 50,
@@ -27,11 +29,14 @@ var closeButtonLabel = Ti.UI.createLabel({
 	
 });
 
+
+
 viewPhotoButton.addEventListener("click", function(){
 	galWin.open(thumbsContainer);
 	closeButtonView.add(closeButtonLabel);
 	galWin.add(closeButtonView);
 });
+
 
 closeButtonView.addEventListener("click", function(){
 	galWin.close();
@@ -77,8 +82,7 @@ galWin.addEventListener("click", function(event){
 		image: "imageList[i]",
 		borderRadius: 5
 	});
-	imageWin.add(photoView);
-	imageWin.open();
+	
 });
 
 

@@ -1,0 +1,51 @@
+var galWin = Ti.UI.createWindow({
+	title: "Gallery",
+	backgroundColor: "#fff",
+	modal: true,
+	layout: "horizontal"
+});
+
+var closeButtonView = Ti.UI.createView({
+	backgroundColor: "#B00707",
+	height: 50,
+	bottom: 0
+});
+
+var closeButtonLabel = Ti.UI.createLabel({
+	text: "Close",
+	color: "#E3E6E3",
+	textAlign: "center",
+	font: {fontSize: 20, fontFamily: "Times New Roman"}
+	
+});
+
+var photoList = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, "myImages");
+var imageList = photoList.getDirectoryListing();
+
+for(var i=0; i<imageList.length; i++)
+	var galView = Ti.UI.createView({
+		top: 5,
+		left: 5,
+		width: 75,
+		height: 75,
+		borderRadius: 5,
+		
+	});
+	var photo = Ti.UI.createImageView({
+		image: "imageList[i]"
+	});
+	galView.add(photo);
+	galWin.add(galView);
+	
+enterButtonView.addEventListener("click", function(){
+	galWin.open();
+	
+});
+closeButtonView.addEventListener("click", function(){
+	galWin.close();
+});
+
+closeButtonView.add(closeButtonLabel);
+galWin.add(closeButtonView);
+
+

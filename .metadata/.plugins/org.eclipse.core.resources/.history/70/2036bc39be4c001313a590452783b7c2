@@ -27,11 +27,14 @@ var closeButtonLabel = Ti.UI.createLabel({
 	
 });
 
+
+
 viewPhotoButton.addEventListener("click", function(){
 	galWin.open(thumbsContainer);
 	closeButtonView.add(closeButtonLabel);
 	galWin.add(closeButtonView);
 });
+
 
 closeButtonView.addEventListener("click", function(){
 	galWin.close();
