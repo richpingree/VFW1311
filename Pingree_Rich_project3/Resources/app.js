@@ -1,10 +1,9 @@
-
-
+var tabGroup = Ti.UI.createTabGroup();
 
 var mainWin = Ti.UI.createWindow({
 	title: "Project 3",
 	backgroundColor: "#0202Cf",
-	modal: true
+	tabBarHidden: true
 });
 
 var tab1 = Ti.UI.createTab({
@@ -28,12 +27,10 @@ var photoButtonLabel = Ti.UI.createLabel({
 	
 });
 
-
-
-
-viewPhotoButton.add(photoButtonLabel);
-mainWin.add(viewPhotoButton);
-
 var mediafile = require("photos");
 
+//tabGroup.addTab(tab1);
+viewPhotoButton.add(photoButtonLabel);
+mainWin.add(viewPhotoButton);
+// tabGroup.open();
 mainWin.open();

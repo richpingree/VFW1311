@@ -12,6 +12,11 @@ var galWin = Ti.UI.createWindow({
 	tabBarHidden: true
 });
 
+var tab2 = Ti.UI.createTab({
+	
+	window:galWin
+});
+	
 var closeButtonView = Ti.UI.createView({
 	backgroundColor: "#B00707",
 	height: 50,
@@ -20,7 +25,7 @@ var closeButtonView = Ti.UI.createView({
 });
 
 var closeButtonLabel = Ti.UI.createLabel({
-	text: "Close",
+	text: "Close Window",
 	color: "#E3E6E3",
 	textAlign: "center",
 	font: {fontSize: 20, fontFamily: "Times New Roman"}
@@ -28,9 +33,9 @@ var closeButtonLabel = Ti.UI.createLabel({
 });
 
 viewPhotoButton.addEventListener("click", function(){
-	galWin.open(thumbsContainer);
 	closeButtonView.add(closeButtonLabel);
 	galWin.add(closeButtonView);
+	galWin.open();
 });
 
 closeButtonView.addEventListener("click", function(){
@@ -41,32 +46,30 @@ closeButtonView.addEventListener("click", function(){
 var thumbsContainer = Ti.UI.createScrollView({
 	contentWidth: platformWidth,
 	contentHeight: platformHeight,
-	layout: "horizontal",
+	layout: "horizontal"
 	
 });
 
-var makeThumb = function(){
-	for(var i=0; i<imageList.length; i++){
-		var galView = Ti.UI.createView({
-			top: 5,
-			left: 5,
-			width: 75,
-			height: 75,
-			borderRadius: 5,
-			
-		});
-		var photo = Ti.UI.createImageView({
-			image: "imageList[i]"
-			
-		});
-		galView.add(photo);
-		thumbsContainer.add(galView);
-		
-	}
-	galWin.add(thumbsContainer);
-};
 
-makeThumb();
+for(var i=0; i<imageList.length; i++){
+	var galView = Ti.UI.createView({
+		top: 5,
+		left: 5,
+		width: 75,
+		height: 75,
+		borderRadius: 5,
+		
+	});
+	var photo = Ti.UI.createImageView({
+		image: "imageList[i].jpg"
+			
+	});
+	galView.add(photo);
+	thumbsContainer.add(galView);
+		
+}
+galWin.add(thumbsContainer);
+
 
 galWin.addEventListener("click", function(event){
 	var imageWin = Ti.UI.createWindow({
@@ -74,11 +77,12 @@ galWin.addEventListener("click", function(event){
 		backgroundColor: "#fff"
 	});
 	var photoView = Ti.UI.createImageView({
-		image: "imageList[i]",
+		image: "myImages/" + imageList[i],
 		borderRadius: 5
 	});
 	imageWin.add(photoView);
 	imageWin.open();
 });
 
-
+tabGroup.addTab(tab1,tab2);
+tabGroup.open();
