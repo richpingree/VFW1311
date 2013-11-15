@@ -35,7 +35,7 @@ var closeButtonLabel = Ti.UI.createLabel({
 viewPhotoButton.addEventListener("click", function(){
 	closeButtonView.add(closeButtonLabel);
 	galWin.add(closeButtonView);
-	galWin.open();
+	galWin.open(thumbsContainer);
 });
 
 closeButtonView.addEventListener("click", function(){
@@ -61,7 +61,7 @@ for(var i=0; i<imageList.length; i++){
 		
 	});
 	var photo = Ti.UI.createImageView({
-		image: imageList[i]
+		image: "imageList[i].jpg"
 			
 	});
 	galView.add(photo);
@@ -71,9 +71,9 @@ for(var i=0; i<imageList.length; i++){
 galWin.add(thumbsContainer);
 
 
-galWin.addEventListener("click", function(event){
+photo.addEventListener("click", function(event){
 	var imageWin = Ti.UI.createWindow({
-		title: event.source.imageList[i],
+		title: imageList[i],
 		backgroundColor: "#fff"
 	});
 	var photoView = Ti.UI.createImageView({

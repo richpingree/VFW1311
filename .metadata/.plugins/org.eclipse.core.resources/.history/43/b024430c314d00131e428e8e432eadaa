@@ -73,7 +73,7 @@ galWin.add(thumbsContainer);
 
 galWin.addEventListener("click", function(event){
 	var imageWin = Ti.UI.createWindow({
-		title: event.source.imageList[i],
+		title: imageList[i],
 		backgroundColor: "#fff"
 	});
 	var photoView = Ti.UI.createImageView({

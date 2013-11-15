@@ -29,7 +29,8 @@ var photoButtonLabel = Ti.UI.createLabel({
 
 var mediafile = require("photos");
 
-
+//tabGroup.addTab(tab1);
 viewPhotoButton.add(photoButtonLabel);
 mainWin.add(viewPhotoButton);
+// tabGroup.open();
 mainWin.open();

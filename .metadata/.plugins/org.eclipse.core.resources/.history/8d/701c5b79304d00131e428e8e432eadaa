@@ -61,7 +61,7 @@ for(var i=0; i<imageList.length; i++){
 		
 	});
 	var photo = Ti.UI.createImageView({
-		image: imageList[i]
+		image: "imageList[i].jpg"
 			
 	});
 	galView.add(photo);
@@ -73,7 +73,7 @@ galWin.add(thumbsContainer);
 
 galWin.addEventListener("click", function(event){
 	var imageWin = Ti.UI.createWindow({
-		title: event.source.imageList[i],
+		title: imageList[i],
 		backgroundColor: "#fff"
 	});
 	var photoView = Ti.UI.createImageView({

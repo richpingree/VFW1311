@@ -33,8 +33,8 @@ var closeButtonLabel = Ti.UI.createLabel({
 });
 
 viewPhotoButton.addEventListener("click", function(){
-	closeButtonView.add(closeButtonLabel);
-	galWin.add(closeButtonView);
+	// closeButtonView.add(closeButtonLabel);
+	// galWin.add(closeButtonView);
 	galWin.open();
 });
 
@@ -61,7 +61,7 @@ for(var i=0; i<imageList.length; i++){
 		
 	});
 	var photo = Ti.UI.createImageView({
-		image: imageList[i]
+		image: "imageList[i].jpg"
 			
 	});
 	galView.add(photo);
@@ -73,7 +73,7 @@ galWin.add(thumbsContainer);
 
 galWin.addEventListener("click", function(event){
 	var imageWin = Ti.UI.createWindow({
-		title: event.source.imageList[i],
+		title: imageList[i],
 		backgroundColor: "#fff"
 	});
 	var photoView = Ti.UI.createImageView({
@@ -85,4 +85,7 @@ galWin.addEventListener("click", function(event){
 });
 
 tabGroup.addTab(tab1,tab2);
+closeButtonView.add(closeButtonLabel);
+galWin.add(closeButtonView);
 tabGroup.open();
+
