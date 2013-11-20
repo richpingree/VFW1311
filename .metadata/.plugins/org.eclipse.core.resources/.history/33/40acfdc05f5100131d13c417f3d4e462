@@ -1,0 +1,10 @@
+var mainWin = Ti.UI.createWindow({
+	
+	
+});
+
+var navWin = Ti.UI.iOS.createNavigationWindow({
+	window: mainWin
+});
+
+navWin.open();

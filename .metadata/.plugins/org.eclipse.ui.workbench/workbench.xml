@@ -31,37 +31,17 @@
 <part id="0"/>
 <part id="1"/>
 <part id="2"/>
-<part id="3"/>
-<part id="4"/>
-<part id="5"/>
-<part id="6"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="com.aptana.editor.js" name="app.js" partName="app.js | Pingree_Rich_project3" path="/Users/richardpingree/Documents/Titanium_Studio_Workspace/VFW/Pingree_Rich_project3/Resources/app.js" title="app.js | Pingree_Rich_project3" tooltip="Pingree_Rich_project3/Resources/app.js" workbook="DefaultEditorWorkbook">
+<editor id="com.aptana.editor.js" name="app.js" partName="app.js" path="/Users/richardpingree/Documents/Titanium_Studio_Workspace/VFW/Pingree_Rich_project3/Resources/app.js" title="app.js" tooltip="Pingree_Rich_project3/Resources/app.js" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Pingree_Rich_project3/Resources/app.js"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="84" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="542" selectionTopPixel="0"/>
 </editor>
-<editor id="com.aptana.editor.js" name="photos.js" partName="photos.js" path="/Users/richardpingree/Documents/Titanium_Studio_Workspace/VFW/Pingree_Rich_project3/Resources/photos.js" title="photos.js" tooltip="Pingree_Rich_project3/Resources/photos.js" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="com.aptana.editor.js" name="photos.js" partName="photos.js" path="/Users/richardpingree/Documents/Titanium_Studio_Workspace/VFW/Pingree_Rich_project3/Resources/photos.js" title="photos.js" tooltip="Pingree_Rich_project3/Resources/photos.js" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Pingree_Rich_project3/Resources/photos.js"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1435" selectionTopPixel="0"/>
-</editor>
-<editor id="com.aptana.editor.js" name="app.js" partName="app.js | Pingree_Rich_project1" path="/Users/richardpingree/Documents/Titanium_Studio_Workspace/VFW/Pingree_Rich_project1/Resources/app.js" title="app.js | Pingree_Rich_project1" tooltip="Pingree_Rich_project1/Resources/app.js" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Pingree_Rich_project1/Resources/app.js"/>
-<editorState selectionHorizontalPixel="0" selectionLength="22" selectionOffset="1104" selectionTopPixel="549"/>
-</editor>
-<editor id="com.aptana.editor.js" name="media.js" partName="media.js" path="/Users/richardpingree/Documents/Titanium_Studio_Workspace/VFW/Pingree_Rich_project1/Resources/media.js" title="media.js" tooltip="Pingree_Rich_project1/Resources/media.js" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Pingree_Rich_project1/Resources/media.js"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="145" selectionTopPixel="0"/>
-</editor>
-<editor id="com.aptana.editor.js" name="app.js" partName="app.js | Pingree_Rich_project2" path="/Users/richardpingree/Documents/Titanium_Studio_Workspace/VFW/Pingree_Rich_project2/Resources/app.js" title="app.js | Pingree_Rich_project2" tooltip="Pingree_Rich_project2/Resources/app.js" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Pingree_Rich_project2/Resources/app.js"/>
-<editorState selectionHorizontalPixel="0" selectionLength="64" selectionOffset="101" selectionTopPixel="0"/>
-</editor>
-<editor id="com.aptana.editor.js" name="char.js" partName="char.js" path="/Users/richardpingree/Documents/Titanium_Studio_Workspace/VFW/Pingree_Rich_project2/Resources/char.js" title="char.js" tooltip="Pingree_Rich_project2/Resources/char.js" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Pingree_Rich_project2/Resources/char.js"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1606" selectionTopPixel="634"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1559" selectionTopPixel="593"/>
 </editor>
 </editors>
 <views>
@@ -84,9 +64,6 @@
 <view id="com.aptana.samples.ui.SamplesView" partName="Samples"/>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>
-<category IMemento.internal.id="Warnings (1 item)"/>
-</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -105,7 +82,7 @@
 <element path="/Pingree_Rich_project1/Resources"/>
 </expanded>
 <selection>
-<element path="/Pingree_Rich_project1/Resources/media.js"/>
+<element path="/Pingree_Rich_project1/Resources/app.js"/>
 </selection>
 </project>
 <project name="Pingree_Rich_project2">
@@ -113,16 +90,15 @@
 <element path="/Pingree_Rich_project2/Resources"/>
 </expanded>
 <selection>
-<element path="/Pingree_Rich_project2/Resources/char.js"/>
+<element path="/Pingree_Rich_project2/CHANGELOG.txt"/>
 </selection>
 </project>
 <project name="Pingree_Rich_project3">
 <expanded>
 <element path="/Pingree_Rich_project3/Resources"/>
-<element path="/Pingree_Rich_project3/Resources/images"/>
 </expanded>
 <selection>
-<element path="/Pingree_Rich_project3/README"/>
+<element path="/Pingree_Rich_project3/Resources/myImages"/>
 </selection>
 </project>
 </viewState>
@@ -170,30 +146,21 @@
 <view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="com.aptana.terminal.views.terminal:Resources"/>
 <fastViewBars/>
-<layout>
-<mainWindow>
-<info folder="true" part="leftArea">
-<folder activePageID="com.aptana.explorer.view" appearance="2" expanded="2">
-<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="leftArea">&#x0A;<folder activePageID="com.aptana.explorer.view" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
 <page content="com.aptana.explorer.view" label="App Explorer"/>
 <page content="com.aptana.ui.io.remoteview" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="894" ratioRight="298" relationship="2" relative="leftArea">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="894" ratioRight="298" relationship="2" relative="leftArea">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.19966443" ratioLeft="238" ratioRight="954" relationship="2" relative="leftArea"/>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@1b5e16d" ratio="0.74939173" ratioLeft="616" ratioRight="206" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
-<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1b5e16d" ratio="0.74939173" ratioLeft="616" ratioRight="206" relationship="4" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="com.aptana.terminal.views.terminal:Resources" label="Resources"/>
 <page content="com.aptana.terminal.views.terminal:*" label="LabelNotFound"/>
 <page content="com.aptana.terminal.views.terminal" label="LabelNotFound"/>
@@ -201,19 +168,15 @@
 <page content="org.eclipse.ui.views.TaskList" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
 <page content="com.aptana.webserver.ui.view" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="bottomLeft" ratio="0.74939173" ratioLeft="616" ratioRight="206" relationship="4" relative="leftArea">
-<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<info folder="true" part="bottomLeft" ratio="0.74939173" ratioLeft="616" ratioRight="206" relationship="4" relative="leftArea">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <page content="com.aptana.samples.ui.SamplesView" label="LabelNotFound"/>
 <page content="com.aptana.snippets.ui.views.SnippetsView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
@@ -327,115 +290,9 @@
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/Pingree_Rich_project3/Resources/app.js"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/Pingree_Rich_project3/Resources/photos.js"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/Pingree_Rich_project2/Resources/char.js"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/Pingree_Rich_project1/Resources/app.js"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/Pingree_Rich_project1/Resources/media.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" path="/Pingree_Rich_project3/Resources/photos.js"/>
 </editors>
-<item historyLabel="app.js | Pingree_Rich_project1" index="3">
-<position info="not_deleted" x="1104" y="22"/>
-</item>
-<item historyLabel="app.js | Pingree_Rich_project3" index="0">
-<position info="not_deleted" x="708" y="0"/>
-</item>
-<item historyLabel="photos.js" index="1">
-<position info="not_deleted" x="859" y="0"/>
-</item>
-<item historyLabel="app.js | Pingree_Rich_project1" index="3">
-<position info="not_deleted" x="1227" y="16"/>
-</item>
-<item historyLabel="app.js | Pingree_Rich_project3" index="0">
-<position info="not_deleted" x="825" y="0"/>
-</item>
-<item historyLabel="media.js" index="4">
-<position info="not_deleted" x="145" y="0"/>
-</item>
-<item historyLabel="photos.js" index="1">
-<position info="not_deleted" x="859" y="0"/>
-</item>
-<item historyLabel="app.js | Pingree_Rich_project3" index="0">
-<position info="not_deleted" x="825" y="0"/>
-</item>
-<item historyLabel="photos.js" index="1">
-<position info="not_deleted" x="377" y="0"/>
-</item>
-<item historyLabel="app.js | Pingree_Rich_project3" index="0">
-<position info="not_deleted" x="825" y="0"/>
-</item>
-<item historyLabel="photos.js" index="1">
-<position info="not_deleted" x="377" y="0"/>
-</item>
-<item historyLabel="app.js | Pingree_Rich_project3" index="0">
-<position info="not_deleted" x="825" y="0"/>
-</item>
-<item historyLabel="photos.js" index="1">
-<position/>
-</item>
-<item historyLabel="app.js | Pingree_Rich_project3" index="0">
-<position info="not_deleted" x="825" y="0"/>
-</item>
-<item historyLabel="app.js | Pingree_Rich_project1" index="3">
-<position info="not_deleted" x="148" y="18"/>
-</item>
-<item historyLabel="app.js | Pingree_Rich_project3" index="0">
-<position info="not_deleted" x="84" y="0"/>
-</item>
-<item historyLabel="photos.js" index="1">
-<position info="not_deleted" x="1619" y="0"/>
-</item>
-<item historyLabel="app.js | Pingree_Rich_project1" index="3">
-<position info="not_deleted" x="1104" y="22"/>
-</item>
-<item historyLabel="app.js | Pingree_Rich_project3" index="0">
-<position info="not_deleted" x="84" y="0"/>
-</item>
-<item historyLabel="photos.js" index="1">
-<position/>
-</item>
-<item historyLabel="app.js | Pingree_Rich_project3" index="0">
-<position info="not_deleted" x="136" y="0"/>
-</item>
-<item historyLabel="app.js | Pingree_Rich_project1" index="3">
-<position info="not_deleted" x="1104" y="22"/>
-</item>
-<item historyLabel="photos.js" index="1">
-<position info="not_deleted" x="713" y="0"/>
-</item>
-<item historyLabel="app.js | Pingree_Rich_project3" index="0">
-<position/>
-</item>
-<item historyLabel="photos.js" index="1">
-<position info="not_deleted" x="1619" y="0"/>
-</item>
-<item historyLabel="app.js | Pingree_Rich_project3" index="0">
-<position info="not_deleted" x="680" y="0"/>
-</item>
-<item historyLabel="photos.js" index="1">
-<position info="not_deleted" x="1619" y="0"/>
-</item>
-<item historyLabel="app.js | Pingree_Rich_project3" index="0">
-<position info="not_deleted" x="825" y="0"/>
-</item>
-<item historyLabel="photos.js" index="1">
-<position info="not_deleted" x="377" y="0"/>
-</item>
-<item historyLabel="app.js | Pingree_Rich_project3" index="0">
-<position info="not_deleted" x="825" y="0"/>
-</item>
-<item historyLabel="photos.js" index="1">
-<position info="not_deleted" x="1618" y="0"/>
-</item>
-<item historyLabel="char.js" index="2">
-<position info="not_deleted" x="1606" y="0"/>
-</item>
-<item historyLabel="app.js | Pingree_Rich_project3" index="0">
-<position info="not_deleted" x="825" y="0"/>
-</item>
-<item historyLabel="photos.js" index="1">
-<position info="not_deleted" x="1618" y="0"/>
-</item>
-<item historyLabel="photos.js" index="1">
-<position info="not_deleted" x="1616" y="0"/>
-</item>
 <item historyLabel="photos.js" index="1">
 <position info="not_deleted" x="1570" y="0"/>
 </item>
@@ -472,8 +329,113 @@
 <item historyLabel="app.js | Pingree_Rich_project3" index="0">
 <position info="not_deleted" x="368" y="0"/>
 </item>
-<item active="true" historyLabel="app.js | Pingree_Rich_project3" index="0">
+<item historyLabel="app.js" index="0">
 <position info="not_deleted" x="708" y="0"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="144" y="0"/>
+</item>
+<item historyLabel="app.js | Pingree_Rich_project1" index="2">
+<position/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="144" y="0"/>
+</item>
+<item historyLabel="photos.js" index="3">
+<position info="not_deleted" x="1484" y="0"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="609" y="0"/>
+</item>
+<item historyLabel="app.js | Pingree_Rich_project1" index="2">
+<position info="not_deleted" x="12" y="38"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="38" y="0"/>
+</item>
+<item historyLabel="app.js | Pingree_Rich_project1" index="2">
+<position info="not_deleted" x="212" y="53"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="196" y="0"/>
+</item>
+<item historyLabel="app.js | Pingree_Rich_project1" index="2">
+<position info="not_deleted" x="1104" y="22"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="612" y="0"/>
+</item>
+<item historyLabel="app.js | Pingree_Rich_project1" index="2">
+<position info="not_deleted" x="1227" y="16"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="144" y="0"/>
+</item>
+<item historyLabel="app.js | Pingree_Rich_project1" index="2">
+<position info="not_deleted" x="148" y="18"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="144" y="0"/>
+</item>
+<item historyLabel="photos.js" index="3">
+<position info="not_deleted" x="427" y="0"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="150" y="50"/>
+</item>
+<item historyLabel="photos.js" index="3">
+<position info="not_deleted" x="751" y="0"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="542" y="0"/>
+</item>
+<item historyLabel="photos.js" index="3">
+<position info="not_deleted" x="1713" y="0"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="542" y="0"/>
+</item>
+<item historyLabel="photos.js" index="3">
+<position/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="542" y="0"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="611" y="0"/>
+</item>
+<item historyLabel="photos.js" index="3">
+<position info="not_deleted" x="1672" y="30"/>
+</item>
+<item historyLabel="photos.js" index="3">
+<position info="not_deleted" x="1334" y="28"/>
+</item>
+<item historyLabel="photos.js" index="3">
+<position info="not_deleted" x="1371" y="0"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="542" y="0"/>
+</item>
+<item historyLabel="photos.js" index="3">
+<position info="not_deleted" x="1371" y="0"/>
+</item>
+<item historyLabel="app.js | Pingree_Rich_project1" index="2">
+<position info="not_deleted" x="148" y="18"/>
+</item>
+<item historyLabel="photos.js" index="3">
+<position info="not_deleted" x="1667" y="0"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="542" y="0"/>
+</item>
+<item historyLabel="photos.js" index="3">
+<position info="not_deleted" x="1559" y="0"/>
+</item>
+<item historyLabel="app.js" index="0">
+<position info="not_deleted" x="542" y="0"/>
+</item>
+<item active="true" historyLabel="photos.js" index="3">
+<position info="not_deleted" x="1559" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -481,13 +443,6 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
-<trimArea IMemento.internal.id="16384">
-<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@16868dd"/>
-<trimItem IMemento.internal.id="left"/>
-</trimArea>
-<trimArea IMemento.internal.id="131072">
-<trimItem IMemento.internal.id="org.eclipse.ui.editorss"/>
-</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -496,11 +451,13 @@
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
 <trimItem IMemento.internal.id="com.appcelerator.ui.trim"/>
-<trimItem IMemento.internal.id="terminalArea"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="app.js" tooltip="Pingree_Rich_project1/Resources/app.js">
+<persistable path="/Pingree_Rich_project1/Resources/app.js"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="AvitarGroup.jpg" tooltip="Pingree_Rich_project3/Resources/myImages/AvitarGroup.jpg">
 <persistable path="/Pingree_Rich_project3/Resources/myImages/AvitarGroup.jpg"/>
 </file>
@@ -515,9 +472,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="media.js" tooltip="Pingree_Rich_project1/Resources/media.js">
 <persistable path="/Pingree_Rich_project1/Resources/media.js"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="app.js" tooltip="Pingree_Rich_project1/Resources/app.js">
-<persistable path="/Pingree_Rich_project1/Resources/app.js"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.js" name="photos.js" tooltip="Pingree_Rich_project3/Resources/photos.js">
 <persistable path="/Pingree_Rich_project3/Resources/photos.js"/>

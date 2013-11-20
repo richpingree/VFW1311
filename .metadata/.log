@@ -204,3 +204,40 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/richardp
 
 !ENTRY org.eclipse.ui 4 4 2013-11-14 07:21:37.404
 !MESSAGE Unable to create menu item "com.appcelerator.titanium.mobile.command.install.blackberry", command "com.appcelerator.titanium.mobile.command.install.blackberry" not defined
+!SESSION 2013-11-19 13:17:26.615 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/richardpingree/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/richardpingree/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2013-11-19 13:17:38.767
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.osgi 2 1 2013-11-19 13:19:56.935
+!MESSAGE NLS missing message: BasicProjectCreationPage_crossPlatformWarningAndroid in: com.appcelerator.titanium.ui.wizard.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-11-19 13:19:56.952
+!MESSAGE NLS missing message: BasicProjectCreationPage_crossPlatformWarningIOS in: com.appcelerator.titanium.ui.wizard.messages
+
+!ENTRY org.eclipse.ui 4 4 2013-11-19 13:45:29.792
+!MESSAGE Unable to create menu item "com.appcelerator.titanium.mobile.command.install.blackberry", command "com.appcelerator.titanium.mobile.command.install.blackberry" not defined
+
+!ENTRY org.eclipse.osgi 2 1 2013-11-19 13:45:34.714
+!MESSAGE NLS missing message: NodeTitaniumSDKCommandsHandler_mobileWebBuild in: com.appcelerator.titanium.mobile.cli.messages
+
+!ENTRY org.eclipse.ui 4 4 2013-11-19 13:53:38.959
+!MESSAGE Unable to create menu item "com.appcelerator.titanium.mobile.command.install.blackberry", command "com.appcelerator.titanium.mobile.command.install.blackberry" not defined
+
+!ENTRY org.eclipse.ui 4 4 2013-11-19 15:59:35.769
+!MESSAGE Unable to create menu item "com.appcelerator.titanium.mobile.command.install.blackberry", command "com.appcelerator.titanium.mobile.command.install.blackberry" not defined
+
+!ENTRY org.eclipse.ui 4 4 2013-11-20 10:21:08.138
+!MESSAGE Unable to create menu item "com.appcelerator.titanium.mobile.command.install.blackberry", command "com.appcelerator.titanium.mobile.command.install.blackberry" not defined
+
+!ENTRY org.eclipse.ui 4 4 2013-11-20 10:21:18.481
+!MESSAGE Unable to create menu item "com.appcelerator.titanium.mobile.command.install.blackberry", command "com.appcelerator.titanium.mobile.command.install.blackberry" not defined
+
+!ENTRY org.eclipse.osgi 2 1 2013-11-20 13:52:43.913
+!MESSAGE NLS missing message: HttpServerSettingsTab_Title in: com.aptana.js.debug.ui.internal.launchConfigurations.messages

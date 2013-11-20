@@ -1,0 +1,62 @@
+var mainWin = Ti.UI.createWindow({
+	title: "Project Week 2",
+	font: {fontSize: 20, fontFamily: "Times New Roman"},
+	modal: true,
+	backgroundColor: "#3C7502"
+	
+});
+
+var navWin = Ti.UI.iOS.createNavigationWindow({
+	window: mainWin
+});
+
+var galleryView = Ti.UI.createView({
+	backgroundColor: "#3605E8",
+	height: 100,
+	top: 10
+	
+});
+
+var dataView = Ti.UI.createView({
+	backgroundColor:"#E80505",
+	height: 100,
+	top: (galleryView.top + galleryView.height) + 10
+	
+});
+
+var customView = Ti.UI.createView({
+	backgroundColor: "#F0E229",
+	height: 100,
+	top: (dataView.top + dataView.height) + 10
+	
+});
+
+var galleryLabel = Ti.UI.createLabel({
+	text: "Gallery",
+	color: "#fff",
+	font: {fontSize: 20, fontFamily: "Times New Roman"},
+	textAlign: "center"
+	
+});
+
+var dataLabel = Ti.UI.createLabel({
+	text: "Data",
+	color: "#fff",
+	font: {fontSize: 20, fontFamily: "Times New Roman"},
+	textAlign: "center"
+	
+});
+
+var customLabel = Ti.UI.createLabel({
+	text: "Custom",
+	color: "#fff",
+	font: {fontSize: 20, fontFamily: "Times New Roman"},
+	textAlign: "center"
+	
+});
+
+customView.add(customLabel);
+dataView.add(dataLabel);
+galleryView.add(galleryLabel);
+mainWin.add(galleryView, dataView, customView);
+navWin.open();
