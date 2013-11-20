@@ -1,0 +1,7 @@
+var myImages = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, "charimgs");
+var imageList = myImages.getDirectoryListing();
+
+galleryView.addEventListener("click", function(e){
+	console.log(imageList);
+	
+});

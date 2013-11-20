@@ -1,0 +1,24 @@
+var characters = {
+	"superheroes": {
+		headTitle: "Superheroes",
+		footTitle: "Heroes fight for justice!",
+		"identity": [
+			{"name": "Superman", "alias": "Real Name: Clark Kent", "image": "logoimgs/Superman_logo.png"},
+			{"name": "Batman", "alias": "Real Name: Bruce Wayne", "image": "logoimgs/batman-logo.gif"},
+			{"name": "Green Arrow", "alias": "Real Name: Oliver Queen", "image": "logoimgs/green arrow logo.png"},
+			{"name": "The Flash", "alias": "Real Name: Barry Allen", "image": "logoimgs/The_Flash_Logo.jpg"},
+			{"name": "Green Lantern", "alias": "Real Name: Hal Jordan", "image": "logoimgs/Green_Lantern_Corps_Logo.jpg"}
+		]		
+	}
+};
+
+
+dataView.addEventListener("click", function(e){
+	dataWin = Ti.UI.createWindow({
+	title: "Project Week 2",
+	modal: true,
+	backgroundColor: "#595BC2"
+});
+
+	dataWin.open();
+});

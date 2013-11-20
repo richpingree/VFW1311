@@ -1,0 +1,4 @@
+galleryView.addEventListener("click", function(e){
+	
+	
+});

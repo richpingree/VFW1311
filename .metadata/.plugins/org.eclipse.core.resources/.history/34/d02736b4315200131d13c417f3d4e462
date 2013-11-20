@@ -1,0 +1,41 @@
+customView.addEventListener("click", function(e){
+	var formWin = Ti.UI.createWindow({
+  	backgroundColor: "#595BC2"
+});
+
+var nameTextField = Ti.UI.createTextField({
+ 	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	color: '#336699',
+	top: 30, 
+	left: 10,
+	width: 250, 
+	height: 30
+});
+
+var nameFieldLabel = Ti.UI.createLabel({
+	text: "What is your real name?",
+	font: {fontSize: 15, fontFamily: "Times New Roman"},
+	top: 10,
+	left: 10
+});
+
+var powerFieldLabel = Ti.UI.createLabel({
+	text: "If you could have any superpower, what would it be?",
+	font: {fontSize: 15, fontFamily: "Times New Roman"},
+	top: (nameTextField.top + nameTextField.height) + 10,
+	left: 10
+});
+
+var powerTextField = Ti.UI.createTextField({
+	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	color: '#336699',
+	top: powerFieldLabel.top + 20, 
+	left: 10,
+	width: 250, 
+	height: 30
+});
+
+formWin.add(nameTextField, nameFieldLabel, powerFieldLabel, powerTextField);
+navWin.openWindow(formWin, {animate: true});
+	
+});

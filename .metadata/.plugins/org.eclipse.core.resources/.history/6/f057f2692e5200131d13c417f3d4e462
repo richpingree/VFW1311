@@ -1,0 +1,23 @@
+customView.addEventListener("click", function(e){
+	var win = Ti.UI.createWindow({
+  	backgroundColor: "#595BC2"
+});
+
+var textField = Ti.UI.createTextField({
+  borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+  color: '#336699',
+  top: 30, 
+  left: 10,
+  width: 250, 
+  height: 30
+});
+
+var textFieldLabel = Ti.UI.createLabel({
+		
+	
+});
+
+win.add(textField);
+navWin.openWindow(win, {animate: true});
+	
+});

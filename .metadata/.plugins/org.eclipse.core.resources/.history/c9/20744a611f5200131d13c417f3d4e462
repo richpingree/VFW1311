@@ -1,0 +1,23 @@
+var myImages = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, "charimgs");
+var imageList = myImages.getDirectoryListing();
+
+galleryView.addEventListener("click", function(e){
+	var galWin = Ti.UI.createWindow({
+		title: "Member's Gallery",
+		modal: true,
+		backgroundColor: "#595BC2"
+	});
+	var newPicView = Ti.UI.createView({
+		backgroundColor:"#E80505",
+		height: viewHeight,
+		bottom: 20
+	});
+	var newPicLabel = Ti.UI.createLabel({
+		text: "New Picture",
+		color: "labelColor"#fff,
+		font: {fontSize: 20, fontFamily: "Times New Roman"},
+		textAlign: "center"
+	});
+	galWin.add(newPicView)
+	navWin.openWindow(galWin, {animate: true});
+});

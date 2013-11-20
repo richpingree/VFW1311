@@ -1,4 +1,4 @@
-var myImages = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, "charimgs");
+var myImages = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, "charimages");
 var imageList = myImages.getDirectoryListing();
 
 var galWin = Ti.UI.createWindow({
@@ -21,7 +21,7 @@ var newPicLabel = Ti.UI.createLabel({
 	});
 	
 var photo = Ti.UI.createImageView({
-	image: "charimgs/"+imageList[0],
+	image: "charimages/"+ imageList[0],
 	top: 10,
 	bottom: (newPicView.bottom + newPicView.height) + 10
 		
