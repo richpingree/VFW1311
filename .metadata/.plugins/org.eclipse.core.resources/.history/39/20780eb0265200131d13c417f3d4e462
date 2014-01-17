@@ -1,4 +1,0 @@
-customView.addEventListener("click", function(e){
-	
-	
-});

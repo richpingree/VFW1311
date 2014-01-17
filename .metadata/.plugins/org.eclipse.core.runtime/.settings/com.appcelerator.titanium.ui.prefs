@@ -1,7 +1,10 @@
+=run
 Android\ Emulator\ Process\:ConsoleLogLevel=Info
-LAST_LAUNCH_TIMESTAMP=1384888682599
+LAST_LAUNCH_TIMESTAMP=1389993742079
+Pingree_Rich_MUI1401_Prototype\:launchMode=run
+Pingree_Rich_MUI1401_Prototype\:launchShortcut=com.appcelerator.titanium.mobile.ui.android.device.launchShortcut
 eclipse.preferences.version=1
 iOS\ build\ and\ deploy\:ConsoleLogLevel=Info
 preference.show.console.onError=true
 preference.studio.perspective.toolbar.visible=true
-preference.studio.perspective.version=102
+preference.studio.perspective.version=103
