@@ -1,8 +1,10 @@
 =run
 Android\ Emulator\ Process\:ConsoleLogLevel=Info
-LAST_LAUNCH_TIMESTAMP=1389993742079
+LAST_LAUNCH_TIMESTAMP=1390150597937
 Pingree_Rich_MUI1401_Prototype\:launchMode=run
 Pingree_Rich_MUI1401_Prototype\:launchShortcut=com.appcelerator.titanium.mobile.ui.android.device.launchShortcut
+Pingree_Rich_Project4\:launchMode=run
+Pingree_Rich_Project4\:launchShortcut=com.appcelerator.titanium.mobile.ui.android.device.launchShortcut
 eclipse.preferences.version=1
 iOS\ build\ and\ deploy\:ConsoleLogLevel=Info
 preference.show.console.onError=true
